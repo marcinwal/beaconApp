@@ -93,7 +93,8 @@ var heroku_path = 'https://fierce-dawn-6227.herokuapp.com';
           $.get(request,info);
           //add logic if connection is lost
           // alert('I lost you');  
-
+          info = document.getElementById('beaconInfo');
+          info.innerHTML = "You left the party!";
           found = false;
       }
     };
