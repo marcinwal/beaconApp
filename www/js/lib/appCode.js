@@ -68,7 +68,9 @@ var heroku_path = 'https://fierce-dawn-6227.herokuapp.com';
       info = {email:email,beacon_major:beacon.major,beacon_minor:beacon.minor};
       $.get(request,info);
       found = true;
-      alert("Party beacon found:"+beacon.major);
+      // alert("Party beacon found:"+beacon.major);
+      info = document.getElementById('beaconInfo');
+      info.innerHTML = "Party beacon found:"+beacon.major;
       yourBeacon = beacon;
       console.log(beacon);
       } 

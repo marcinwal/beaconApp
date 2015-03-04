@@ -18,6 +18,7 @@ html,body
 .style-color-unknown
 {
 	background: rgba(0,0,0,0.7);
+	border-radius: 5;
 }
 
 .style-color-unknown-text
@@ -29,6 +30,25 @@ html,body
 .style-color-transparent
 {
 	background: rgb(255,255,255);
+}
+
+.style-color-title
+{
+	background-color: rgba(200,200,200,0.5);
+	color: rgb(0,0,0);
+	border-radius: 5;
+}
+
+.email
+{
+	background-color: rgb(255,255,255);
+	color: black;
+}
+
+.beaconInfo
+{
+	background-color: rgb(255,255,255);
+	color: tomato;
 }
 
 .style-color-white-text,

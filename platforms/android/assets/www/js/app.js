@@ -1,4 +1,6 @@
 // Define application object and common functions.
+var element;
+var info;
 
 var app = (function()
 {
@@ -26,14 +28,17 @@ var app = (function()
 
 
   function onDeviceReady() {
-        var element = document.getElementById('deviceProperties');
+        element = document.getElementById('deviceProperties');
         // element.innerHTML = 'Device Model: '    + device.model    + '<br />' +
         //                     'Device Cordova: '  + device.cordova  + '<br />' +
         //                     'Device Platform: ' + device.platform + '<br />' +
         //                     'Device UUID: '     + device.uuid     + '<br />' +
         //                     'Device Version: '  + device.version  + '<br />';
 
+        info = document.getElementById('beaconInfo');
+
         element.innerHTML ='';     
+        info.innerHTML ='';
 
         var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
 
@@ -42,11 +47,13 @@ var app = (function()
    						      emails = fetchEmail(phoneData);
    						      if (emails[0] === undefined){myError("email of mobile user is unknown");}
    						      email = emails[0];
-   						      element.innerHTML = email;
-   						      alert("Hello "+email);
+   						      element.innerHTML = email; 
+                    info.innerHTML = "Hello"+email;
+   						      // alert("Hello "+email);
    						      jsonCall(heroku_path,"/qry",{email:email},function(json){
    											partyBeacon={beacon_major:json.beacon_major,beacon_minor:json.beacon_minor};
-   										  alert("Beacon party details: "+partyBeacon.beacon_major+"/"+partyBeacon.beacon_minor);
+   										  // alert("Beacon party details: "+partyBeacon.beacon_major+"/"+partyBeacon.beacon_minor);
+                        info.innerHTML = "Beacon party details: "+partyBeacon.beacon_major+"/"+partyBeacon.beacon_minor;
                         //added
                         app.startScanningBeacons();
                         app.startRangingBeacons();
