@@ -10,12 +10,13 @@
     <feature name="DeviceInformation">
         <param name="android-package" value="com.vliesaputra.cordova.plugins.DeviceInformation" />
     </feature>
-    <name>BeaconFinder</name>
+    <name>TurnUpTuneIn</name>
     <description>
-        Estimote Beacon demo app.
+        Estimote Beacon party app.
     </description>
-    <author email="mikael.kindborg@evothings.com" href="http://evothings.com">
-        Mikael Kindborg
+    <icon density="mdpi" height="72" platform="android" src="www/images/logo.png" width="72" />
+    <author email="marcin.walendzik@gmail.com" href="http://evothings.com">
+        MakersAcademy Beacon Team
     </author>
     <access origin="*" />
     <content src="index.html" />

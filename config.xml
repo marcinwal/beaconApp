@@ -3,12 +3,13 @@
 	version="0.2.0"
 	xmlns="http://www.w3.org/ns/widgets"
 	xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>BeaconFinder</name>
+    <name>TurnUpTuneIn</name>
     <description>
-        Estimote Beacon demo app.
+        Estimote Beacon party app.
     </description>
-    <author email="mikael.kindborg@evothings.com" href="http://evothings.com">
-        Mikael Kindborg
+    <icon src="www/images/logo.png" platform="android" width="72" height="72" density="mdpi" />
+    <author email="marcin.walendzik@gmail.com" href="http://evothings.com">
+        MakersAcademy Beacon Team
     </author>
     <access origin="*" />
     <content src="index.html" />
