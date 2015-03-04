@@ -70,7 +70,7 @@ var heroku_path = 'https://fierce-dawn-6227.herokuapp.com';
       found = true;
       // alert("Party beacon found:"+beacon.major);
       info = document.getElementById('beaconInfo');
-      info.innerHTML = "Party beacon found:"+beacon.major;
+      info.innerHTML = "Party beacon found major: "+beacon.major;
       yourBeacon = beacon;
       console.log(beacon);
       } 
@@ -92,7 +92,8 @@ var heroku_path = 'https://fierce-dawn-6227.herokuapp.com';
           info = {email:email,beacon_major:beacon.major,beacon_minor:beacon.minor};
           $.get(request,info);
           //add logic if connection is lost
-          alert('I lost you');        
+          // alert('I lost you');  
+
           found = false;
       }
     };

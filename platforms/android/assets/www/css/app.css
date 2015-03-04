@@ -34,21 +34,22 @@ html,body
 
 .style-color-title
 {
-	background-color: rgba(200,200,200,0.5);
-	color: rgb(0,0,0);
+	background-color: rgba(255,255,255,0.5);
+	color: rgba(0,0,0,0.7);
+	border: 0;
 	border-radius: 5;
 }
 
 .email
 {
-	background-color: rgb(255,255,255);
-	color: black;
+	background-color: rgba(0,0,0,0.7);
+	color: white;
 }
 
 .beaconInfo
 {
-	background-color: rgb(255,255,255);
-	color: tomato;
+	background-color: rgba(0,0,0,0.7);
+	color: white;
 }
 
 .style-color-white-text,
@@ -130,7 +131,7 @@ html,body
 {
 	margin: 0px;
 	padding: 6% 6%;
-	color: white;
+/*	color: white;*/
 	font-size: 300%;
 	font-weight: bold;
 }
